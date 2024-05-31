@@ -98,9 +98,9 @@
     const alpha = people.sort((lastOne, nextOne) => {
       const [aLast, aFirst] = lastOne.split(", ");
       const [bLast, bFirst] = nextOne.split(", ");
-      return aLast > bLast ? 1: -1;
+      return aLast.localeCompare(bLast);
     });
-    console.log(alpha);
+    console.log("Sort: "+alpha);
 
 
     // 8. Reduce Exercise
